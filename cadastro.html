@@ -60,79 +60,66 @@
         <div class="android-be-together-section mdl-typography--text-center">
         <p></p>
 				
-<label>Crie seu login flick games
-A flick games permite que você baixe jogos gratuitos e pagos para seu smartphone,
-e para os desenvolvedores permitimos a divulgação do seu projeto.</label>
-          <form action="cadastrando.php" method="post">
+          <label>Crie seu login flick games
+          A flick games permite que você baixe jogos gratuitos e pagos para seu smartphone,
+          e para os desenvolvedores permitimos a divulgação do seu projeto.</label>
+          <p></p>
 
-          <div class="mdl-cell mdl-cell--2-col">
-            <div class="mdl-textfield mdl-js-textfield">
-              <input class="mdl-textfield__input" type="text" name="nome">
-              <label class="mdl-textfield__label" for="sample2">Nome:</label>
-             </div>
-          </div>
-          <div class="mdl-cell mdl-cell--2-col">
-            <div class="mdl-textfield mdl-js-textfield">
-              <input class="mdl-textfield__input" type="text" name="sobre">
-              <label class="mdl-textfield__label" for="sample2">Sobrenome:</label>
-            </div>
-          </div>
-            <p></p>
-          <div class="mdl-cell mdl-cell--2-col">  
-            <div class="mdl-textfield mdl-js-textfield">
-              <input class="mdl-textfield__input" type="text" name="email">
-              <label class="mdl-textfield__label" for="sample1">Email:</label>
-            </div>
-          </div>
-          <div class="mdl-cell mdl-cell--2-col">
-            <div class="mdl-textfield mdl-js-textfield">
-              <input class="mdl-textfield__input" type="text" name="senha">
-              <label class="mdl-textfield__label" for="sample2">Senha:</label>
-            </div>
-            </div>
-              <div class="mdl-cell mdl-cell--2-col"> 
-                <div class="mdl-selectfield mdl-js-selectfield">
-                    <select class="mdl-textfield__input" name="tipo">
-                      <option value="" disabled selected>Tipo de acesso</option>
-                      <option value="1">Jogador</option>
-                      <option value="1">Desenvolvedor</option>
-                    </select>
-                </div>
-              </div>  
-              <div class="mdl-cell mdl-cell--2-col">
-                <div class="mdl-selectfield mdl-js-selectfield">
-                    <select class="mdl-textfield__input" name="sexo">
-                      <option value="" disabled selected>Sexo</option>
-                      <option value="1">Masculino</option>
-                      <option value="2">Feminino</option>
-                      <option value="3">Outros</option>
-                    </select>
-                </div>
-              </div>
-              <div class="mdl-cell mdl-cell--2-col"> 
-                <div class="mdl-selectfield mdl-js-selectfield">
+
+              <form action="cadastrando.php" method="post">
+
+                  <div class="input-group">
+                    <input type="text" name="nome">
+                    <label class="label" for="nome">Nome:</label>
+                  </div>
+                  <div class="input-group">
+                    <input type="text" name="sobre">
+                    <label class="label" for="sobre">Sobrenome:</label>
+                  </div>
+                  <div class="input-group">
+                    <input type="password" name="senha">
+                    <label class="label" for="senha">senha:</label>
+                  </div>
+
+                  <div class="input-group">
+                    <input type="email" name="email">
+                    <label class="label" for="email">email:</label>
+                  </div>
+
+                  <div class="input-group radio">
+                    <input type="radio" name="sexo" value="masculino">
+                    <label for="masculino">masculino</label>
+                    <input type="radio" name="sexo" value="feminino">
+                    <label for="mulher">Feminino</label>
+                    <input type="radio" name="sexo" value="outros">
+                    <label for="outros">Outros</label>
+                  </div>
+
+                  <div class="mdl-selectfield mdl-js-selectfield">
                     <select class="mdl-textfield__input" name="pais">
                       <option value="" disabled selected>Selecione o páis</option>
-                      <option value="1">Islováquia</option>
-                      <option value="2">Cazaquistão</option>
-                      <option value="3">Páis das maravilhas</option>
+                      <option value="Cazaquistão">Cazaquistão</option>
+                      <option value="Páis das maravilhas">Páis das maravilhas</option>
                     </select>
-                </div>
-              </div>  
+                  </div>
+                  <div class="mdl-selectfield mdl-js-selectfield">
+                    <select class="mdl-textfield__input" name="tipo">
+                      <option value="" disabled selected>Tipo de acesso</option>
+                      <option value="Jogador">Jogador</option>
+                      <option value="Desenvolvedors">Desenvolvedor</option>
+                    </select>
+                  </div>
 
-              <div class="mdl-cell mdl-cell--2-col"> 
-                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
-                    <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" name="termo">
-                    <span class="mdl-checkbox__label">Concordo com os termos de uso e política de privacidade</span>
-                  </label>
-              </div>
+                  <div class="input-group checkbox">
+                    <input type="checkbox" value="verdadeiro" name="termo">
+                    <label for="terminos">Concordo com os termos de uso e política de privacidade</label>
+                  </div>
+                  <input type="submit" id="btn-submit" value="Cadastrar">
 
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-                Cadastrar
-              </button>
-          </form>	
+              </form>
         </div>
       </div>
+
         <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
             <div class="mdl-mega-footer--left-section"></div>
