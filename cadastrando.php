@@ -2,7 +2,14 @@
 
 // recebe os dados do html
 
-
+$nome=$_POST['nome'];
+$sobrenome=$_POST['sobre'];
+$email=$_POST['email'];
+$senha=md5($_POST['senha']);
+$tipo=$_POST['tipo'];
+$sexo=$_POST['sexo'];
+$pais=$_POST['pais'];
+$termo=$_POST['termo'];
 
 // dados para conexão no banco
 
